@@ -3,8 +3,14 @@ app = Flask(__name__)
 
 
 @app.route("/login")
-def imageboard():
+def login():
     return render_template('login.html')
+
+
+@app.route("/")
+@app.route("/home")
+def home():
+    return render_template('home.html')
 
 
 if __name__ == '__main__':
