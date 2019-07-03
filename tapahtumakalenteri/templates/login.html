@@ -5,7 +5,7 @@
             {{ form.hidden_tag() }}
             <fieldset class="form-group">
                 <legend class="border-bottom mb-4">Kirjaudu</legend>
-                <div class="form-group">
+                <div class="form-group uusifontti">
                     {{ form.email.label(class="form-control-label") }}
                     {% if form.email.errors %}
                         {{ form.email(class="form-control form-control-lg is-invalid") }}
@@ -18,7 +18,7 @@
                         {{ form.email(class="form-control form-control-lg") }}
                     {% endif %}
                 </div>
-                <div class="form-group">
+                <div class="form-group uusifontti">
                     {{ form.password.label(class="form-control-label") }}
                     {% if form.password.errors %}
                         {{ form.password(class="form-control form-control-lg is-invalid") }}
@@ -31,7 +31,7 @@
                         {{ form.password(class="form-control form-control-lg") }}
                     {% endif %}
                 </div>
-                <div class="form-check">
+                <div class="form-check uusifontti">
                     {{ form.remember(class="form-check-input") }}
                     {{ form.remember.label(class="form-check-label") }}
                 </div>
@@ -39,9 +39,14 @@
             <div class="form-group">
                 {{ form.submit(class="btn btn-outline-info") }}
             </div>
-            <small class="text-muted ml-2">
+            <small class="text-muted ml-2 uusifontti">
                 <a href="#">Unohtuiko salasanasi?</a>
             </small>
+            <legend class="border-bottom mb-3"></legend>
+            <p class="uusifontti margini">Uusi käyttäjä?</p>
+            <div class="form-group">
+                {{ form.submit2(class="btn btn-outline-info") }}
+            </div>
         </form>
     </div>
 

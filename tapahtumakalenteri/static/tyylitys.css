@@ -44,6 +44,41 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 20px;
 }
 
+.basic-box {
+  box-sizing: border-box;
+  width: 1000px;
+  height: 450px;
+  background: #ffffff;
+  margin-left: 6.25%;
+  border: 1px solid #dddddd;
+
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+
+.side-box {
+  box-sizing: border-box;
+  width: 20%;
+  height: 399px;
+  background: #ffffff;
+  border: 1px solid #dddddd;
+}
+
+.top-box {
+  box-sizing: border-box;
+  width: 20%;
+  height: 49px;
+  background: #ffffff;
+  border: 1px solid #dddddd;
+}
+
+.top-box2 {
+  box-sizing: border-box;
+  width: 100%;
+  height: 50px;
+  background: #ffffff;
+  border: 1px solid #dddddd;
+}
 
 
 .article-title {
@@ -91,4 +126,21 @@ a.article-title:hover {
 
 .account-heading {
   font-size: 2.5rem;
+}
+
+legend {
+  font-size: 1.2rem;
+}
+
+.uusifontti {
+  font-size: 0.9rem;
+}
+
+.form-control-lg {
+  font-size: 0.9rem;
+}
+
+.margini {
+  margin-top: 6px;
+  margin-bottom: 0.1rem;
 }
