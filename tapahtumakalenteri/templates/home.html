@@ -1,9 +1,15 @@
 {% extends "layout.html" %}
 {% block content %}
-    <div class="basic-box">
-        <div class="top-box2">
-            <div class="top-box"></div>
-        </div>
-        <div class="side-box"></div>
+<div id="container">
+  <div id="side-box">
+    <div id="side-box2">ryhmät</div>
+  </div>
+  <div id="content-container">
+    <div id="top-box">omat tapahtumat</div>
+    <div id="content">
+        <table>pöytä tähän</table>
+        <a href="{{ url_for('uusitapahtuma') }}"><button id="nappula">Luo uusi tapahtuma</button></a>
     </div>
+  </div>
+</div>
 {% endblock content %}

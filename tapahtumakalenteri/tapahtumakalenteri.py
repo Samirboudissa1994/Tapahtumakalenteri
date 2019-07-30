@@ -8,7 +8,7 @@ app.config['SECRET_KEY'] = '12345678'
 @app.route("/")
 @app.route("/home")
 def home():
-    return render_template('home.html')
+    return render_template('home.html', title='Home')
 
 
 @app.route("/login")
@@ -21,6 +21,11 @@ def login():
 def register():
     form = RegistrationForm()
     return render_template('register.html', title='register', form=form)
+
+
+@app.route("/uusitapahtuma")
+def uusitapahtuma():
+    return render_template('uusitapahtuma.html', title='uusitapahtuma')
 
 
 if __name__ == '__main__':
