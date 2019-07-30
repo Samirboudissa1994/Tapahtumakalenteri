@@ -21,3 +21,12 @@ class LoginForm(FlaskForm):
     remember = BooleanField('Pidä minut sisäänkirjautuneena')
     submit = SubmitField('Kirjaudu')
     submit2 = SubmitField('Tee tunnus')
+
+
+class LoginForm(FlaskForm):
+    email = StringField('sähköposti',
+                        validators=[DataRequired(), Email()])
+    password = PasswordField('Salasana', validators=[DataRequired()])
+    remember = BooleanField('Pidä minut sisäänkirjautuneena')
+    submit = SubmitField('Kirjaudu')
+    submit2 = SubmitField('Tee tunnus')
